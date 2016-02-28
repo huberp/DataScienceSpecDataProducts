@@ -36,7 +36,7 @@ shinyServer(function(input, output) {
   ##build a treemap
   output$treemapPlot <- renderPlot({
     ##
-    treemap(dtf=mergedData,index=c("packageName","name"),input$selectedMetric, title=paste("Treemap for Metric ",getLongTextByAbbrv(input$selectedMetric)))
+    treemap(dtf=mergedData,index=c("packageName","name"),input$selectedMetric, title=paste("Treemap for Metric library(rsconnect)",getLongTextByAbbrv(input$selectedMetric)))
 
   })
   ##
